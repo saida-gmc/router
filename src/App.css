@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+body {
+  background-color: rgb(214, 214, 253);
+  text-align: center;
+}
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  color: blue;
+}
+.movieCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 60px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 50px;
+}
+
+.new-Card {
+  text-align: center;
+}
+
+.cardTitle {
+  color: rgb(240, 10, 86);
+  background-color: rgb(234, 243, 104);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.addBoutton {
+  background-color: yellow;
+  border: transparent;
+  font-size: 100px;
+  font-weight: bolder;
+  color: white;
+  border-radius: 10%;
+  height: 110px;
+  width: 110px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-right: 110px;
+  margin-left: 410px;
+}
+
+.movie-Modal {
+  top: 10px;
+  width: 30%;
+  background-color: rgb(247, 245, 134);
+  text-align: center;
+  position: relative;
+  margin: auto;
+  border-radius: 5px;
+  max-width: 500px;
+
+  padding: 1rem;
+}
+
+/* .modal-Title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  color: blue;
+} */
+
+.close-Button {
+  background-color: rgb(241, 82, 8);
+  border: transparent;
+  color: white;
+  border-radius: 10%;
+}
+
+.submit-Button {
+  background-color: rgb(27, 241, 8);
+  border: transparent;
+  color: white;
+  border-radius: 10%;
+}
+
+.search-Button {
+  background-color: rgb(241, 241, 97);
+  font-weight: bolder;
+  color: blue;
+  border-bottom: solid 5 px chartreuse;
+  border-radius: 10%;
+}
+
+.card {
+  color: black;
+
+  text-align: center;
+}
+
+.card-Text {
+  text-align: justify;
+}
+
+.search-Button {
+  float: right;
+  margin-top: auto;
+}
+
+.rate-Button {
+  float: right;
+}
+.modall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
