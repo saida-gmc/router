@@ -7,12 +7,14 @@ const AddCard = ({ handleAdd }) => {
   const handleShow = () => setShow(true);
 
   const [newMovie, SetNewMovie] = useState({
+    id: Math.random(),
     title: "",
     image: "",
     date: "",
     type: "",
     rating: "",
     description: "",
+    trailer: "",
   });
 
   const add = () => {
@@ -28,6 +30,7 @@ const AddCard = ({ handleAdd }) => {
       type: "",
       rating: "",
       description: "",
+      trailer: "",
     });
     handleClose();
   };
@@ -59,6 +62,8 @@ const AddCard = ({ handleAdd }) => {
           <input type="text" name="rating" onChange={change} />
           <label htmlFor="Image">Image</label>
           <input type="text" name="image" onChange={change} />
+          <label htmlFor="Trailer">Trailer</label>
+          <input type="text" name="trailer" onChange={change} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={add}>

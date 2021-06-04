@@ -12,9 +12,11 @@ const Trailer = ({ moviesInfo }) => {
         .filter((el) => el.id == ID)
         .map((el, key) => (
           <Card key={el.id} style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={el.trailer} />
+            
             <Card.Body>
-              <iframe src={el.trailer} title="YouTube video"></iframe>
-              <Card.Title className="card">{el.description}</Card.Title>
+              <Card.Title>{el.title}</Card.Title>
+              <Card.Text>{el.description}</Card.Text>{" "}
               <Link to="/">
                 <Button>Back Home</Button>
               </Link>

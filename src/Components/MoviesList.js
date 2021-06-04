@@ -9,7 +9,7 @@ const MoviesList = ({ moviesInfo, search, rating }) => {
         .filter((el) => el.title.toLowerCase().includes(search.trim()))
         .filter((el) => el.rating >= rating)
         .map((el, id) => (
-          <Link to="{'/${el.id}'}">
+          <Link to={`/${el.id}`}>
             <Card key={id} style={{ width: "18rem" }}>
               <Card.Img
                 variant="top"
@@ -24,7 +24,7 @@ const MoviesList = ({ moviesInfo, search, rating }) => {
                 <ListGroup className="list-group-flush">
                   <StarRatingComponent value={el.rating} />
                 </ListGroup>
-                <Card.Text className="card-Text">{el.description}</Card.Text>
+                <Card.Text className="card-Text">{el.type}</Card.Text>
               </Card.Body>
             </Card>
           </Link>
